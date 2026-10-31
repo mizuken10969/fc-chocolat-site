@@ -3,243 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>青梅新町FCショコラ｜青梅市の小学生女子サッカーチーム</title>
+<title>新町FCショコラ　メンバー募集！</title>
 <meta name="description" content="東京都青梅市で活動する小学生女子サッカーチーム「青梅新町FCショコラ」。年長さん〜6年生の部員募集中。初心者・未経験も大歓迎！見学・体験入部受付中。">
-<meta property="og:title" content="青梅新町FCショコラ">
+<meta property="og:title" content="新町FCショコラ　メンバー募集！">
 <meta property="og:description" content="青梅市の小学生女子サッカーチーム。年長さん〜6年生の部員募集中！見学・体験入部受付中。">
 <meta property="og:image" content="images/hero.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#EB5350">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <style>
+/* ペライチ「lively」テーマの再現 */
 :root{
-  --red:#EB5350; --red-dark:#C93C3A; --red-pale:#FDEDEC;
-  --ink:#3A2A28; --muted:#7A6663; --bg:#FFFAF8; --card:#FFFFFF; --line:#F1DCDA;
+  --bg:#FCFBFC; --ink:#434244; --red:#E8412E;
+  --beige:#CCB8A3; --beige-btn:#D4C3B1; --beige-pale:#E7DED4; --dash:#D5D5D5;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN",sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:16px}
-img{max-width:100%;display:block}
-a{color:var(--red-dark)}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+body{font-family:"Zen Maru Gothic","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,sans-serif;font-weight:500;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.8;letter-spacing:.04em}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+strong{font-weight:700}
+.red{color:var(--red)}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px}
+.sm{max-width:700px}
+.center{text-align:center}
+section{padding:60px 0}
+h2{font-size:28px;font-weight:700;line-height:1.5}
+@media(max-width:767px){h2{font-size:20px} section{padding:40px 0}}
 
-/* header */
-.nav{position:sticky;top:0;z-index:10;background:rgba(255,250,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
-.nav .brand{font-weight:800;color:var(--red);text-decoration:none;font-size:17px}
-.nav ul{display:flex;gap:18px;list-style:none;font-size:14px}
-.nav ul a{color:var(--ink);text-decoration:none}
-.nav ul a:hover{color:var(--red)}
-.nav .cta{background:var(--red);color:#fff!important;padding:6px 14px;border-radius:999px}
-@media(max-width:720px){.nav ul li:not(:last-child){display:none}}
+/* 画像（フルサイズ） */
+.full img{width:100%}
 
-/* hero */
-.hero{background:var(--red)}
-.hero img{width:100%;max-width:1400px;margin:0 auto}
-.hero-msg{background:var(--red);color:#fff;text-align:center;padding:8px 20px 44px}
-.hero-msg h1{font-size:clamp(22px,4.6vw,34px);font-weight:800;line-height:1.5}
-.hero-msg p{margin-top:8px;font-size:clamp(15px,2.6vw,18px)}
-.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
-.badges span{background:#fff;color:var(--red-dark);font-weight:700;padding:6px 16px;border-radius:999px;font-size:14px}
+/* 上画像（リード文） */
+.lead h2{font-size:24px}
+.lead .catch{margin-top:28px;font-size:20px;line-height:1.8}
+@media(max-width:767px){.lead h2{font-size:17px}.lead .catch{font-size:16px}}
 
-/* sections */
-section{padding:64px 0}
-.ttl{text-align:center;margin-bottom:32px}
-.ttl small{display:block;color:var(--red);font-weight:700;letter-spacing:.15em;font-size:13px}
-.ttl h2{font-size:clamp(22px,4vw,28px);font-weight:800}
-.ttl h2::after{content:"";display:block;width:48px;height:4px;border-radius:2px;background:var(--red);margin:10px auto 0}
-.lead{text-align:center;max-width:640px;margin:0 auto}
-.alt{background:var(--red-pale)}
+/* リボン見出し */
+.ribbon-wrap{padding:40px 0 10px}
+.ribbon{position:relative;max-width:760px;margin:0 auto;text-align:center}
+.ribbon .body{position:relative;z-index:2;margin:0 60px;padding:12px 20px;border-top:4px solid var(--beige-pale);border-bottom:4px solid var(--beige-pale);
+  background:repeating-linear-gradient(-45deg,#fff 0 3px,#F6F2EE 3px 5px)}
+.ribbon .body h2{font-size:24px}
+.ribbon::before,.ribbon::after{content:"";position:absolute;top:18px;width:90px;height:58px;background:var(--beige-pale);z-index:1}
+.ribbon::before{left:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,30% 50%)}
+.ribbon::after{right:0;clip-path:polygon(0 0,100% 0,70% 50%,100% 100%,0 100%)}
+.ribbon .body::before,.ribbon .body::after{content:"";position:absolute;bottom:-22px;width:30px;height:18px;background:#D9CBBB;z-index:-1}
+.ribbon .body::before{left:0;clip-path:polygon(0 0,100% 100%,100% 0)}
+.ribbon .body::after{right:0;clip-path:polygon(0 0,0 100%,100% 0)}
+@media(max-width:767px){.ribbon .body{margin:0 34px;padding:10px}.ribbon .body h2{font-size:17px}.ribbon::before,.ribbon::after{width:50px;height:46px;top:14px}}
 
-.about{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
-.about img{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-@media(max-width:720px){.about{grid-template-columns:1fr}}
+/* 左画像＋リスト */
+.list-img{display:grid;grid-template-columns:5fr 7fr;gap:40px;align-items:start}
+.list-img .photo{aspect-ratio:4/3;overflow:hidden}
+.list-img .photo img{width:100%;height:100%;object-fit:cover;object-position:62% 30%;transform:scale(1.35);transform-origin:62% 30%}
+.checks{list-style:none}
+.checks li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--dash)}
+.checks li img{width:25px;flex:none;margin-top:1px}
+@media(max-width:767px){.list-img{grid-template-columns:1fr;gap:24px}}
 
-.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
-.checks li{list-style:none;background:var(--card);border-radius:16px;padding:22px 20px 22px 56px;position:relative;box-shadow:0 4px 14px rgba(235,83,80,.08)}
-.checks li::before{content:"✓";position:absolute;left:18px;top:20px;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;text-align:center;line-height:26px;font-size:15px}
-@media(max-width:720px){.checks{grid-template-columns:1fr}}
+/* 見出し（二重線上下） */
+.dbl{padding:30px 0 10px}
+.dbl .line{border-top:3px double var(--beige);border-bottom:3px double var(--beige);padding:18px 10px;text-align:center}
+.dbl h2{font-weight:500}
+.dbl h2 strong{font-weight:700}
 
-.banner{margin:0 auto;max-width:1100px}
-.banner img{width:100%}
+/* 右画像 */
+.img-right .sub{font-size:24px;line-height:1.6;margin-bottom:24px}
+.img-right .cols{display:grid;grid-template-columns:7fr 5fr;gap:40px;align-items:start}
+.img-right .cols p+p{margin-top:1.8em}
+.img-right .photo{aspect-ratio:640/359;overflow:hidden}
+.img-right .photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.25)}
+@media(max-width:767px){.img-right .sub{font-size:18px}.img-right .cols{grid-template-columns:1fr;gap:24px}.img-right .photo{order:-1}}
 
-.trial{background:var(--card);border:3px solid var(--red);border-radius:20px;padding:32px 28px;max-width:760px;margin:0 auto}
-.trial h3{color:var(--red);font-size:20px;text-align:center;margin-bottom:12px}
-.trial p+p{margin-top:12px}
-.trial img{border-radius:12px;margin-top:20px}
+/* 左地図＋テキスト（テキストが左） */
+.map-text .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.map-text .name{font-size:20px;margin-bottom:20px}
+.map-text p{margin-bottom:20px}
+.map-text .big{font-size:16px}
+.map-text .indent{padding-left:6em}
+.map-text iframe{width:100%;height:225px;border:0;display:block}
+@media(max-width:767px){.map-text .cols{grid-template-columns:1fr;gap:16px}}
 
-.info{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-@media(max-width:720px){.info{grid-template-columns:1fr}}
-.box{background:var(--card);border-radius:16px;padding:24px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
-.box h3{font-size:16px;color:var(--red-dark);border-left:5px solid var(--red);padding-left:10px;margin:18px 0 6px}
-.box h3:first-child{margin-top:0}
-.note{font-size:13.5px;color:var(--muted)}
-.map{margin-top:24px;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#eee}
-.map iframe{width:100%;height:100%;border:0}
+/* 文章・枠付き */
+.boxed{border:3px solid var(--beige);padding:30px 20px;text-align:center;max-width:700px;margin:0 auto}
 
-table.fee{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;max-width:560px;margin:0 auto;box-shadow:0 4px 14px rgba(0,0,0,.05)}
-.fee th,.fee td{padding:14px 18px;border-bottom:1px solid var(--line);text-align:left}
-.fee th{background:var(--red);color:#fff;font-weight:700}
-.fee td:last-child{text-align:right;font-weight:700}
-.fee tr.sub td{background:#FFF6F5}
+/* 左プラグイン（インスタ） */
+.insta h2{margin-bottom:24px}
+.insta .text{max-width:470px}
+.btn{display:inline-block;margin-top:24px;background:var(--beige-btn);color:#fff;text-decoration:none;padding:10px 30px;border-radius:999px;font-weight:500;transition:opacity .2s}
+.btn:hover{opacity:.8}
+@media(max-width:767px){.insta .btn-wrap{text-align:center}}
 
-.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:800;padding:14px 32px;border-radius:999px;box-shadow:0 6px 0 var(--red-dark);transition:transform .1s}
-.btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--red-dark)}
-.center{text-align:center;margin-top:24px}
+/* 見出し（矢印・サブテキスト） */
+.arrow{background:var(--beige);color:#fff;text-align:center;padding:24px 20px;position:relative}
+.arrow h2{font-weight:500}
+.arrow p{font-size:16px;margin-top:8px}
+.arrow::after{content:"";position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);border:20px solid transparent;border-top-color:var(--beige);border-bottom:0}
+@media(max-width:767px){.arrow p{font-size:14px}}
 
-.contact{background:var(--red);color:#fff}
-.contact .ttl small{color:#FFD7D5}
-.contact .ttl h2::after{background:#fff}
-.contact-card{background:#fff;color:var(--ink);border-radius:20px;padding:28px;max-width:560px;margin:0 auto;text-align:center}
-.contact-card .name{font-size:20px;font-weight:800}
-.contact-card .roman{color:var(--muted);font-size:13px;margin-bottom:16px}
-.contact-links{display:grid;gap:12px}
-.contact-links a{display:block;border:2px solid var(--red);border-radius:12px;padding:12px;text-decoration:none;font-weight:700;color:var(--red-dark)}
-.contact-links a:hover{background:var(--red-pale)}
+/* お問合せ */
+.contact h2{margin-bottom:24px}
+.contact .f18{font-size:18px}.contact .f16{font-size:16px}
+.contact a{text-decoration:none}
 
-footer{background:#3A2A28;color:#E9DCDA;text-align:center;padding:28px 20px;font-size:12.5px}
-footer .tags{opacity:.75;margin-bottom:10px;line-height:1.9}
+/* ハッシュタグ・フッター */
+.tags{background:var(--beige);color:#fff;padding:40px 0 0}
+footer{background:var(--beige);color:#fff;text-align:center;padding:40px 20px 70px}
 </style>
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top">青梅新町FCショコラ</a>
-    <ul>
-      <li><a href="#about">チーム紹介</a></li>
-      <li><a href="#trial">体験入部</a></li>
-      <li><a href="#access">練習日時</a></li>
-      <li><a href="#fee">会費</a></li>
-      <li><a class="cta" href="#contact">お問合せ</a></li>
-    </ul>
-  </div>
-</header>
+<!-- メイン画像 -->
+<div class="full"><img src="images/hero.jpg" alt="青梅新町FCショコラ" width="1754" height="1240"></div>
 
-<div id="top" class="hero">
-  <img src="images/hero.jpg" alt="青梅新町FCショコラの選手たち" width="1754" height="1240">
-</div>
-<div class="hero-msg">
-  <h1>年長さん〜6年生の部員募集中！</h1>
-  <p>初心者・未経験も大歓迎。ルールを知らなくても大丈夫！</p>
-  <div class="badges"><span>見学OK</span><span>体験入部受付中</span><span>土日祝 9:00〜12:00</span></div>
-</div>
-
-<section id="about">
+<!-- リード -->
+<section class="lead center">
   <div class="wrap">
-    <div class="ttl"><small>ABOUT</small><h2>青梅新町FCショコラとは</h2></div>
-    <div class="about">
-      <div>
-        <p>青梅新町FCショコラは、東京都青梅市で活動している<strong>小学生女子のサッカーチーム</strong>です。</p>
-        <p style="margin-top:12px">小学生の元気な女の子たちが、日々練習に励んでいます。お気軽にお問合せください！</p>
-      </div>
-      <img src="images/photo-match.jpg" alt="試合中の選手たち" width="1280" height="853" loading="lazy">
-    </div>
+    <h2><strong>青梅新町FCショコラは<br>東京都青梅市で活動している、小学生女子のサッカーチームです。<br>小学生の元気な女の子たちが、日々練習に励んでいます。<br>お気軽にお問合せ下さい！！</strong></h2>
+    <p class="catch red">年長さん～６年生の部員募集中！<br>初心者＆未経験も大歓迎！<br>ルールを知らなくても大丈夫！</p>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <div class="ttl"><small>FOR YOU</small><h2>ショコラは、こんな女子におすすめ</h2></div>
+<!-- おすすめ -->
+<div class="ribbon-wrap"><div class="wrap">
+  <div class="ribbon"><div class="body"><h2>ショコラは、こんな女子達におすすめ</h2></div></div>
+</div></div>
+<section>
+  <div class="wrap list-img">
+    <div class="photo"><img src="images/photo-match.jpg" alt="試合中の選手たち" loading="lazy"></div>
     <ul class="checks">
-      <li>体育の授業のサッカーが好きで、学校だけじゃ物足りない女子</li>
-      <li>個人スキルを更に高めて、将来サッカー選手を目指す女子</li>
-      <li>サッカーのルールは分からないけれど、何かスポーツを始めたい女子</li>
+      <li><img src="images/ic_check.svg" alt="">体育の授業のサッカーが好きで、学校だけじゃ物足りない女子。</li>
+      <li><img src="images/ic_check.svg" alt="">個人スキルを更に高めて、将来サッカー選手を目指す女子。</li>
+      <li><img src="images/ic_check.svg" alt="">サッカーのルールは分からないけれど、何かスポーツを始めたい女子。</li>
     </ul>
   </div>
 </section>
 
-<div class="banner"><img src="images/banner1.jpg" alt="" width="1752" height="295" loading="lazy"></div>
+<div class="full"><img src="images/banner1.jpg" alt="" loading="lazy"></div>
 
-<section id="trial">
+<!-- 見学・体験入部 -->
+<div class="dbl"><div class="wrap"><div class="line"><h2><strong>見学＆体験入部受付中！</strong></h2></div></div></div>
+<section class="img-right">
   <div class="wrap">
-    <div class="ttl"><small>TRIAL</small><h2>見学＆体験入部受付中！</h2></div>
-    <div class="trial">
-      <h3>サッカー未経験でも大歓迎！<br>ぜひ一度、練習を見に来てください</h3>
-      <p>サッカー経験の有無に限らず、現在在籍中の選手たちも、みんな最初は見学や体験入部をしてから正式に入部しています。まずは一度、お試しで練習にご参加ください。</p>
-      <p>お子さんの体験中に、ショコラの役員から保護者の方へ、会費や練習の流れなどを簡単にご説明します。</p>
-      <p>もちろん、その場で決めていただかなくて大丈夫です。お子さまの体験入部の感想も踏まえて、ゆっくりご検討ください。</p>
-      <img src="images/photo-practice.jpg" alt="新町小学校での練習風景" width="640" height="359" loading="lazy">
-      <div class="center"><a class="btn" href="#contact">体験入部を申し込む</a></div>
-    </div>
-  </div>
-</section>
-
-<div class="banner"><img src="images/banner2.jpg" alt="" width="1752" height="295" loading="lazy"></div>
-
-<section id="access" class="alt">
-  <div class="wrap">
-    <div class="ttl"><small>ACCESS &amp; SCHEDULE</small><h2>アクセス・練習日時</h2></div>
-    <div class="info">
-      <div class="box">
-        <h3>練習場所</h3>
-        <p>青梅市立新町小学校<br>〒198-0024 東京都青梅市新町5-21-1</p>
-        <h3>アクセス</h3>
-        <p>JR青梅線：小作駅から徒歩25分<br>西東京バス：平松北バス停から徒歩5分<br>マイカー：練習時間中は校内駐車場の利用可</p>
-        <p class="note">※校舎裏側入口からお入りください。<br>※台数に限りがあるのでご注意ください。</p>
+    <h2 class="sub center red">サッカー未経験でも大歓迎です！<br>ぜひ一度、練習を見に来て下さい！</h2>
+    <div class="cols">
+      <div>
+        <p>サッカー経験の有無に限らず、現在在籍中の選手たちも、みんな最初は見学や体験入部をされてから、正式に入部されていますので、まずは一度お試しで練習にご参加下さい。</p>
+        <p>お子さんが体験中に、ショコラの役員から保護者の方へ、簡単ではございますが会費や練習の流れなどの説明をさせて頂きます。</p>
+        <p>もちろん、その場で決めて頂かなくて大丈夫です。<br>お子様の体験入部の感想も踏まえて、ゆっくりご検討ください。</p>
       </div>
-      <div class="box">
-        <h3>練習日時</h3>
-        <p>曜日：毎週土曜・日曜・祝日<br>時間：9:00〜12:00</p>
-        <p class="note" style="margin-top:8px">※土・日に対外試合のある日は、試合を中心にスケジュールが組まれます。年齢制限などで参加対象外になる選手は練習日になります。</p>
-        <h3>連絡方法</h3>
-        <p>細かいスケジュールはLINEグループで連絡し、スマホアプリで出欠管理を行っています。</p>
-      </div>
-    </div>
-    <div class="map">
-      <iframe src="https://maps.google.com/maps?q=%E9%9D%92%E6%A2%85%E5%B8%82%E7%AB%8B%E6%96%B0%E7%94%BA%E5%B0%8F%E5%AD%A6%E6%A0%A1&z=16&output=embed" loading="lazy" title="青梅市立新町小学校の地図" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="photo"><img src="images/photo-practice.jpg" alt="新町小学校での練習風景" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<section id="fee">
-  <div class="wrap">
-    <div class="ttl"><small>FEE</small><h2>会費</h2></div>
-    <table class="fee">
-      <tr><th colspan="2">入会時・年間</th></tr>
-      <tr><td>入会金</td><td>2,000円</td></tr>
-      <tr><td>年会費</td><td>6,000円<br><span class="note">（月額500円）</span></td></tr>
-      <tr><th colspan="2">月会費</th></tr>
-      <tr><td>年長さん<br><span class="note">（入会金なし）</span></td><td>500円</td></tr>
-      <tr><td>1〜2年生</td><td>2,000円</td></tr>
-      <tr><td>3年生以上</td><td>3,000円</td></tr>
-    </table>
+<div class="full"><img src="images/banner2.jpg" alt="" loading="lazy"></div>
+
+<!-- アクセス・練習日時 -->
+<div class="dbl"><div class="wrap"><div class="line"><h2><strong>アクセス・練習日時</strong></h2></div></div></div>
+<section class="map-text">
+  <div class="wrap cols">
+    <div>
+      <div class="name">青梅新町FCショコラ</div>
+      <p>【練習場所】<br><span class="big">青梅市立新町小学校</span><br>〒198-0024　東京都青梅市新町5-21-1</p>
+      <p>【アクセス】<br>JR青梅線：小作駅から徒歩25分<br>西東京バス：平松北バス停から徒歩5分<br>マイカー：<span class="red">練習時間中は校内駐車場の利用可</span><br><span class="indent">※校舎裏側入口からお入りください。</span><br><span class="indent">※台数に限りがあるのでご注意下さい。</span></p>
+      <p>【練習日時】<br>曜日：毎週土曜・日曜・祝日<br>時間：９時～１２時<br><br>※土・日に対外試合のある日は、試合を中心にスケジュールが組まれますが、年齢制限などで参加対象外になる選手は、練習日になります。<br><br>★細かいスケジュールはLINEグループでの連絡と、スマホアプリを使って出欠の管理を行っています。</p>
+    </div>
+    <div><iframe src="https://maps.google.com/maps?q=%E9%9D%92%E6%A2%85%E5%B8%82%E7%AB%8B%E6%96%B0%E7%94%BA%E5%B0%8F%E5%AD%A6%E6%A0%A1&z=15&output=embed" loading="lazy" title="青梅市立新町小学校の地図" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>
 </section>
 
-<div class="banner"><img src="images/banner3.jpg" alt="" width="1752" height="295" loading="lazy"></div>
+<div class="full"><img src="images/banner3.jpg" alt="" loading="lazy"></div>
 
-<section class="alt">
+<!-- 会費 -->
+<div class="dbl"><div class="wrap"><div class="line"><h2>会費</h2></div></div></div>
+<section>
   <div class="wrap">
-    <div class="ttl"><small>INSTAGRAM</small><h2>最新情報はインスタグラムで発信中！</h2></div>
-    <p class="lead">遠征試合の写真や試合結果など、どんどんアップしています。選手たちの楽しそうな笑顔や、頑張るカッコイイ姿をぜひフォローしてみてください！</p>
-    <div class="center"><a class="btn" href="https://www.instagram.com/ome_shinmachi_fc_chocolat/" target="_blank" rel="noopener">公式インスタグラムを見る</a></div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="ttl"><small>CONTACT</small><h2>体験入部等のご連絡はこちら</h2></div>
-    <p class="lead" style="margin-bottom:24px">お電話でもメールでも、公式インスタグラムのDMからでも大歓迎です。お気軽にご連絡ください！</p>
-    <div class="contact-card">
-      <div class="note">代表</div>
-      <div class="name">原 惠</div>
-      <div class="roman">Megumu Hara</div>
-      <div class="contact-links">
-        <a href="tel:09027534214">📞 090-2753-4214</a>
-        <a href="mailto:harame1957@yahoo.co.jp?subject=%E3%80%90%E3%82%B7%E3%83%A7%E3%82%B3%E3%83%A9%E3%80%91%E4%BD%93%E9%A8%93%E5%85%A5%E9%83%A8%E3%81%AE%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B">✉ harame1957@yahoo.co.jp</a>
-        <a href="https://www.instagram.com/ome_shinmachi_fc_chocolat/" target="_blank" rel="noopener">📷 InstagramのDMで連絡</a>
-      </div>
+    <div class="boxed">
+      【入会金】<br>2,000円<br><br>
+      【年会費】<br>6,000円（月額500円）<br><br>
+      【月会費】<br>年長さん：500円（入会金なし）<br>１～２年生：2,000円<br>３年生以上：3,000円
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="tags">#青梅新町fcショコラ #サッカー #女子サッカー #サッカーガール #青梅 #あきる野 #瑞穂 #羽村 #福生 #昭島 #武蔵村山 #入間</div>
-  <div>&copy; <span id="y">2026</span> Ome Shinmachi FC Chocolat</div>
-</footer>
+<div class="full"><img src="images/banner4.jpg" alt="" loading="lazy"></div>
+
+<!-- インスタグラム -->
+<div class="dbl"><div class="wrap"><div class="line"><h2>インスタグラム</h2></div></div></div>
+<section class="insta">
+  <div class="wrap">
+    <h2><strong>最新情報はインスタグラムで発信中！</strong></h2>
+    <p class="text">遠征試合の写真や試合結果など、インスタグラムにどんどんアップしています！<br>選手達の楽しそうな笑顔や、頑張るカッコイイ姿をアップしています。<br>ぜひフォローしてみて下さい！</p>
+    <div class="btn-wrap"><a class="btn" href="https://www.instagram.com/ome_shinmachi_fc_chocolat/" target="_blank" rel="noopener">公式インスタグラムはこちら！</a></div>
+  </div>
+</section>
+
+<div class="full"><img src="images/banner5.jpg" alt="" loading="lazy"></div>
+
+<!-- 連絡先 -->
+<div class="arrow">
+  <h2>体験入部等のご連絡はこちらまで！</h2>
+  <p>お電話でもメールでも結構です。ぜひお気軽にご連絡下さい！<br>公式インスタグラムのDMからでも、もちろん大歓迎です！</p>
+</div>
+<section class="contact center">
+  <div class="wrap">
+    <h2><strong>お問合せ</strong></h2>
+    <p>代表：<span class="f18">原　惠</span><br>Megumu　Hara<br>phone: <a class="f16" href="tel:09027534214">090-2753-4214</a><br>mail: <a class="f16" href="mailto:harame1957@yahoo.co.jp">harame1957@yahoo.co.jp</a></p>
+  </div>
+</section>
+
+<div class="tags"><div class="wrap sm">#青梅新町fcショコラ&nbsp;#サッカー&nbsp;#女子サッカー&nbsp;#サッカーガール&nbsp;#青梅&nbsp;#あきる野&nbsp;#瑞穂&nbsp;#羽村&nbsp;#福生&nbsp;#昭島&nbsp;#武蔵村山&nbsp;#入間</div></div>
+<footer>Copyright <span id="y">2024</span> ome shinmachi fc chocolat</footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 # 青梅新町FCショコラ 公式サイト
 
 東京都青梅市の小学生女子サッカーチーム「青梅新町FCショコラ」の公式Webサイトです。
-旧ペライチ版（fc-chocolat.hp.peraichi.com）から移行し、Cloudflare Pages で公開しています。
+旧ペライチ版（fc-chocolat.hp.peraichi.com）のレイアウト・配色をそのまま再現して移行し、Cloudflare Pages で公開しています。
 
 ## 構成
 
@@ -11,7 +11,8 @@ images/
   hero.jpg          … メイン画像（ロゴ入り）
   photo-match.jpg   … チーム紹介の写真
   photo-practice.jpg… 体験入部欄の写真
-  banner1〜3.jpg    … 区切り用バナー
+  banner1〜5.jpg    … 区切り用バナー（ペライチ版と同じ順）
+  ic_check.svg      … おすすめ欄のチェックアイコン
 ```
 
 ビルド不要の静的サイトです。
